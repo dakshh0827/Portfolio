@@ -21,39 +21,47 @@ export default function About({
         <>
             <AboutHeader
                 {...aboutHeader}
+                titles={aboutHeader?.titles ?? []}
+                image={aboutHeader?.image ?? ''}
             />
             <AboutIntroduction
                 index="01"
                 {...aboutIntroduction}
+                content={aboutIntroduction?.content ?? []}
+                image={aboutIntroduction?.image ?? ''}
             />
             <HobbiesTabs
                 index="02"
                 {...tabs}
+                title={tabs?.title ?? ''}
                 models={MODELS}
+                tabs={tabs?.tabs ?? []}
             />
             <CallToAction
                 index="03"
-                {...callToAction}
+                title={callToAction?.title ?? ''}
+                buttonLabel={callToAction?.buttonLabel ?? ''}
+                buttonHref={callToAction?.buttonHref ?? ''}
             />
         </>
     );
 };
 
 export const getStaticProps: GetStaticProps<{
-    metaData: MetaDataProps;
-    aboutHeader: AboutHeaderProps;
-    aboutIntroduction: AboutIntroductionContent;
-    tabs: HobbiesTabsContent;
-    callToAction: CallToActionContent;
+    metaData: MetaDataProps | null;
+    aboutHeader: AboutHeaderProps | null;
+    aboutIntroduction: AboutIntroductionContent | null;
+    tabs: HobbiesTabsContent | null;
+    callToAction: CallToActionContent | null;
 }> = async ({ locale }) => {
     const fallbackLang = 'en';
     const lang = locale && ABOUT_HEADER[locale] ? locale : fallbackLang;
 
-    const metaData = META_ABOUT[lang];
-    const aboutHeader = ABOUT_HEADER[lang];
-    const aboutIntroduction = ABOUT_INTRODUCTION[lang];
-    const tabs = HOBBIES_TABS[lang];
-    const callToAction = CALL_TO_ACTION[lang];
+    const metaData = META_ABOUT[lang] ?? null;
+    const aboutHeader = ABOUT_HEADER[lang] ?? null;
+    const aboutIntroduction = ABOUT_INTRODUCTION[lang] ?? null;
+    const tabs = HOBBIES_TABS[lang] ?? null;
+    const callToAction = CALL_TO_ACTION[lang] ?? null;
 
     return {
         props: {
@@ -64,4 +72,4 @@ export const getStaticProps: GetStaticProps<{
             callToAction
         }
     }
-}
+};

@@ -53,7 +53,9 @@ export const getStaticProps: GetStaticProps<{
   featuredProject: ProjectProps[];
   callToAction: CallToActionContent;
 }> = async ({ locale }) => {
-  const lang = locale ?? '';
+  const fallbackLang = 'en'; // set your default language here
+  const lang = locale && HOME_HEADER[locale] ? locale : fallbackLang;
+
   const homeHeader = HOME_HEADER[lang];
   const homeIntroduction = HOME_INTRODUCTION[lang];
   const homeFeaturedProjectContent = HOME_FEATURED_PROJECT_CONTENT[lang];

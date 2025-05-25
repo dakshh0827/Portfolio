@@ -32,7 +32,7 @@ export default function Projects({
     }, [query.type]);
 
     const projects = useMemo(() => {
-        return projectsList[projectsType] ?? [];
+        return projectsList?.[projectsType] ?? [];
     }, [projectsList, projectsType]);
 
     useIsomorphicLayoutEffect(() => {
@@ -50,30 +50,36 @@ export default function Projects({
             />
             <CallToAction
                 index="02"
-                {...callToAction}
+                title={callToAction?.title ?? ''}
+                buttonLabel={callToAction?.buttonLabel ?? ''}
+                buttonHref={callToAction?.buttonHref ?? ''}
             />
         </>
     );
 };
 
 export const getStaticProps: GetStaticProps<{
-    metaData: MetaDataProps;
-    projectsList: ProjectsList;
+    metaData: MetaDataProps | null;
+    projectsList: ProjectsList | null;
     tabs: ProjectsTabsType;
-    callToAction: CallToActionContent;
+    callToAction: CallToActionContent | null;
 }> = async ({ locale }) => {
     const lang = locale ?? '';
-    const metaData = META_PROJECTS[lang];
-    const projectsList = PROJECTS_LIST[lang];
+
+    // Safely assign, fallback to null or empty array where appropriate
+    const metaData = META_PROJECTS[lang] ?? null;
+    const projectsList = PROJECTS_LIST[lang] ?? null;
     const tabs = PROJECTS_TABS[lang] ?? [];
-    const callToAction = CALL_TO_ACTION[lang];
+    const callToAction = CALL_TO_ACTION[lang] ?? null;
+
+    // You can add more default values for required nested props if needed
 
     return {
         props: {
             metaData,
             projectsList,
             tabs,
-            callToAction
-        }
+            callToAction,
+        },
     };
 };

@@ -1,0 +1,47 @@
+.c-homeFeaturedProject {
+    --project-margin-t: 70px;
+    --project-item-gap: 60px; // new gap between projects
+    --btn-margin-t: 45px;
+
+    &__index {
+        grid-column: 1 / 1;
+
+        span {
+            display: block;
+        }
+    }
+
+    &__title {
+        grid-column: 3 / -1;
+    }
+
+    &__project {
+        margin-top: var(--project-margin-t);
+
+        // spacing between project items
+        .c-homeFeaturedProject__projectItem {
+            margin-bottom: var(--project-item-gap);
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__btn {
+        margin-top: var(--btn-margin-t);
+    }
+
+    // **---------------------------------------------------**
+    // MEDIA QUERIES
+
+    @include mediaq('>MD') {
+        --project-margin-t: 120px;
+        --project-item-gap: 100px; // more space on larger screens
+        --btn-margin-t: 65px;
+
+        &__title {
+            grid-column: 4 / 7;
+        }
+    }
+}

@@ -14,13 +14,13 @@ export const PERSONAL_PROJECTS: Lang<Projects> = {
         {
             title: 'Books',
             description: 'Books App is a full-stack platform to buy, sell, lend, and read books online, featuring multi-language support, secure Razorpay payments, Gmail OAuth2 notifications, and seamless cart and profile management using MERN and Zustand.',
-            image: '/static/images/projects/books.png',
+            image: '/static/images/projects/Books.png',
             url: 'https://books-epo1.onrender.com'
         },
         {
             title: 'MentorME',
             description: 'MentorMe connects school students with college mentors for personalized career guidance through one-on-one mentorship, AI-based mentor matching, and real-time chat. Built with MERN Stack, Socket.io, and Zustand. Think. Link. Grow.',
-            image: '/static/images/projects/MentorME.png',
+            image: '/static/images/projects/MentorMe.png',
             url: 'https://mentorme-qs6s.onrender.com'
         },
         {
@@ -55,7 +55,7 @@ export const FEATURED_PROJECT: Lang<ProjectProps[]> = {
         {
             title: 'MentorME',
             description: 'MentorMe connects school students with college mentors for personalized career guidance through one-on-one mentorship, AI-based mentor matching, and real-time chat. Built with MERN Stack, Socket.io, and Zustand. Think. Link. Grow.',
-            image: '/static/images/projects/MentorME.png',
+            image: '/static/images/projects/MentorMe.png',
             url: 'https://mentorme-qs6s.onrender.com'
         },
     ],

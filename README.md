@@ -2,6 +2,8 @@
 
 This is a personal portfolio website built by Daksh Thakran to showcase projects, skills, and provide a way to get in touch. It features a modern design, smooth animations powered by GSAP, interactive 3D elements using React Three Fiber, and is built with Next.js and TypeScript.
 
+Live Link: https://daksh-portfolio-xi.vercel.app/
+
 ## ✨ Features
 
 *   **Responsive Design**: Adapts to various screen sizes for a seamless experience on desktop and mobile devices.
@@ -135,5 +137,3 @@ The `.npmrc` file is configured to fetch these from GreenSock's private NPM regi
 @gsap:registry=https://npm.greensock.com
 ```
 You will need to replace `${NPM_TOKEN}` with your actual GreenSock NPM token, typically by setting it as an environment variable named `NPM_TOKEN` that your `npm install` or `yarn install` process can access. For more details, refer to the [GreenSock NPM installation guide](https://gsap.com/docs/v3/Installation/?tab=npm&module=esm&method= secretário#club).
-
-If you do not have a Club GreenSock membership, you might encounter issues resolving these premium plugins during installation or building the project.

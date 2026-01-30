@@ -12,6 +12,24 @@ export const META_PROJECTS: Lang<MetaDataProps> = {
 export const PERSONAL_PROJECTS: Lang<Projects> = {
     en: [
         {
+            title: 'MaViK-39',
+            description: 'MaViK-39 is a comprehensive full-stack IoT platform designed for industrial training institutes (ITIs) to monitor, manage, and maintain laboratory equipment in real-time. The system integrates hardware sensors (ESP32/Arduino) with a cloud backend to track equipment health, predict failures using machine learning, and enforce biometric-based access control for student safety and accountability.',
+            image: '/static/images/projects/Mavik.png',
+            url: 'https://mavik-39.vercel.app/'
+        },
+        {
+            title: 'Wrap-Up',
+            description: 'Wrap-Up is a decentralized article curation platform on Mantle blockchain that uses Groq AI to scrape and summarize web content, storing it on IPFS with immutable on-chain records. Users earn $MFD tokens for curating quality articles through community voting, featuring nested comments, engagement-based leaderboards, and a MERN stack with Web3 integration that ensures transparent, censorship-resistant content verification where every action is cryptographically recorded.',
+            image: '/static/images/projects/Wrap.png',
+            url: 'https://wrap-up-one.vercel.app/'
+        },
+        {
+            title: 'AyurTrace',
+            description: 'AyurTrace is a full-stack supply chain traceability system designed specifically for the Ayurvedic medicine industry. It addresses the critical need for transparency and authenticity verification in herbal product manufacturing by creating an immutable, end-to-end tracking system from farm harvest to consumer purchase. The platform combats counterfeit products and builds consumer trust through verifiable documentation at every stage of the supply chain.',
+            image: '/static/images/projects/Ayurtrace.png',
+            url: 'https://ayurtrace-sepia.vercel.app/'
+        },
+        {
             title: 'Books',
             description: 'Books App is a full-stack platform to buy, sell, lend, and read books online, featuring multi-language support, secure Razorpay payments, Gmail OAuth2 notifications, and seamless cart and profile management using MERN and Zustand.',
             image: '/static/images/projects/Books.png',
@@ -22,24 +40,6 @@ export const PERSONAL_PROJECTS: Lang<Projects> = {
             description: 'MentorMe connects school students with college mentors for personalized career guidance through one-on-one mentorship, AI-based mentor matching, and real-time chat. Built with MERN Stack, Socket.io, and Zustand. Think. Link. Grow.',
             image: '/static/images/projects/MentorMe.png',
             url: 'https://mentorme-qs6s.onrender.com'
-        },
-        {
-            title: 'Texts',
-            description: 'Texts is a full-stack web application that enables seamless real-time communication between users. Built with Node.js, Express, and React, the app leverages WebSocket technology to deliver instant message updates and a responsive, user-friendly interface.',
-            image: '/static/images/projects/Texts.png',
-            url: 'https://realtime-chat-app-gdsx.onrender.com'
-        },
-        {
-            title: 'BloodLink',
-            description: 'BloodLink is a real-time platform connecting blood donors and healthcare providers. It allows doctors to report shortages instantly and enables users to book donation appointments, ensuring quicker, more efficient responses to critical blood supply needs.',
-            image: '/static/images/projects/BloodLink.png',
-            url: 'https://github.com/dakshh0827/BloodLink'
-        },
-        {
-            title: 'News',
-            description: 'News is a responsive React-based application delivering real-time updates across categories like sports, entertainment, and politics. It ensures users stay informed with the latest global happenings through a clean, fast, and user-friendly interface.',
-            image: '/static/images/projects/News.png',
-            url: 'https://github.com/dakshh0827/News-App'
         },
     ],
 };
@@ -47,16 +47,16 @@ export const PERSONAL_PROJECTS: Lang<Projects> = {
 export const FEATURED_PROJECT: Lang<ProjectProps[]> = {
     en: [
         {
-            title: 'Books',
-            description: 'Books App is a full-stack platform to buy, sell, lend, and read books online, featuring multi-language support, secure Razorpay payments, Gmail OAuth2 notifications, and seamless cart and profile management using MERN and Zustand.',
-            image: '/static/images/projects/Books.png',
-            url: 'https://books-epo1.onrender.com'
+            title: 'MaViK-39',
+            description: 'MaViK-39 is a comprehensive full-stack IoT platform designed for industrial training institutes (ITIs) to monitor, manage, and maintain laboratory equipment in real-time. The system integrates hardware sensors (ESP32/Arduino) with a cloud backend to track equipment health, predict failures using machine learning, and enforce biometric-based access control for student safety and accountability.',
+            image: '/static/images/projects/Mavik.png',
+            url: 'https://mavik-39.vercel.app/'
         },
         {
-            title: 'MentorME',
-            description: 'MentorMe connects school students with college mentors for personalized career guidance through one-on-one mentorship, AI-based mentor matching, and real-time chat. Built with MERN Stack, Socket.io, and Zustand. Think. Link. Grow.',
-            image: '/static/images/projects/MentorMe.png',
-            url: 'https://mentorme-qs6s.onrender.com'
+            title: 'Wrap-Up',
+            description: 'Wrap-Up is a decentralized article curation platform on Mantle blockchain that uses Groq AI to scrape and summarize web content, storing it on IPFS with immutable on-chain records. Users earn $MFD tokens for curating quality articles through community voting, featuring nested comments, engagement-based leaderboards, and a MERN stack with Web3 integration that ensures transparent, censorship-resistant content verification where every action is cryptographically recorded.',
+            image: '/static/images/projects/Wrap.png',
+            url: 'https://wrap-up-one.vercel.app/'
         },
     ],
 };

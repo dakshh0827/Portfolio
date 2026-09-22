@@ -12,6 +12,12 @@ export const META_PROJECTS: Lang<MetaDataProps> = {
 export const PERSONAL_PROJECTS: Lang<Projects> = {
     en: [
         {
+            title: 'Agentra',
+            description: 'Agentra is a full-stack marketplace for deploying and monetizing AI agents, where developers can publish agents as on-chain assets with transparent ownership and usage-based payment settlement. The platform combines a React-based deploy studio and agent explorer with a FastAPI backend supporting agent execution, reviews, and analytics, while Model Context Protocol (MCP) enables interoperable agent-to-agent communication across deployed workflows.',
+            image: '/static/images/projects/Agentra.png',
+            url: 'https://www.agentra.live/'
+        },
+        {
             title: 'MaViK-39',
             description: 'MaViK-39 is a comprehensive full-stack IoT platform designed for industrial training institutes (ITIs) to monitor, manage, and maintain laboratory equipment in real-time. The system integrates hardware sensors (ESP32/Arduino) with a cloud backend to track equipment health, predict failures using machine learning, and enforce biometric-based access control for student safety and accountability.',
             image: '/static/images/projects/Mavik.png',
@@ -22,12 +28,6 @@ export const PERSONAL_PROJECTS: Lang<Projects> = {
             description: 'Wrap-Up is a decentralized article curation platform on Mantle blockchain that uses Groq AI to scrape and summarize web content, storing it on IPFS with immutable on-chain records. Users earn $MFD tokens for curating quality articles through community voting, featuring nested comments, engagement-based leaderboards, and a MERN stack with Web3 integration that ensures transparent, censorship-resistant content verification where every action is cryptographically recorded.',
             image: '/static/images/projects/Wrap.png',
             url: 'https://wrap-up-one.vercel.app/'
-        },
-        {
-            title: 'AyurTrace',
-            description: 'AyurTrace is a full-stack supply chain traceability system designed specifically for the Ayurvedic medicine industry. It addresses the critical need for transparency and authenticity verification in herbal product manufacturing by creating an immutable, end-to-end tracking system from farm harvest to consumer purchase. The platform combats counterfeit products and builds consumer trust through verifiable documentation at every stage of the supply chain.',
-            image: '/static/images/projects/Ayurtrace.png',
-            url: 'https://ayurtrace-sepia.vercel.app/'
         },
         {
             title: 'Books',
@@ -47,10 +47,10 @@ export const PERSONAL_PROJECTS: Lang<Projects> = {
 export const FEATURED_PROJECT: Lang<ProjectProps[]> = {
     en: [
         {
-            title: 'MaViK-39',
-            description: 'MaViK-39 is a comprehensive full-stack IoT platform designed for industrial training institutes (ITIs) to monitor, manage, and maintain laboratory equipment in real-time. The system integrates hardware sensors (ESP32/Arduino) with a cloud backend to track equipment health, predict failures using machine learning, and enforce biometric-based access control for student safety and accountability.',
-            image: '/static/images/projects/Mavik.png',
-            url: 'https://mavik-39.vercel.app/'
+            title: 'Agentra',
+            description: 'Agentra is a full-stack marketplace for deploying and monetizing AI agents, where developers can publish agents as on-chain assets with transparent ownership and usage-based payment settlement. The platform combines a React-based deploy studio and agent explorer with a FastAPI backend supporting agent execution, reviews, and analytics, while Model Context Protocol (MCP) enables interoperable agent-to-agent communication across deployed workflows.',
+            image: '/static/images/projects/Agentra.png',
+            url: 'https://www.agentra.live/'
         },
         {
             title: 'Wrap-Up',
